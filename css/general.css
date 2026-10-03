@@ -125,7 +125,7 @@ margin-bottom: 9.6rem;
 .subheading{
     display: block;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 800;
     color: #984700;
     text-transform: uppercase;
     margin-bottom: 1.6rem;
@@ -139,7 +139,7 @@ margin-bottom: 9.6rem;
     color: #fff;
     font-size: 2rem;
     padding: 1.6rem 3.2rem;
-    border-radius: 10.6px;
+    border-radius: 10.6px;  
     text-decoration: none;
     display: inline-block;
 
@@ -169,6 +169,30 @@ margin-bottom: 9.6rem;
     box-sizing: inset 0 0 0 3px #fff;
     
 }
+.link:link,
+.link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid  currentColor;
+    padding-bottom: 2px;
+
+
+}
+.link:hover,
+link:active{
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+/* helper class */
+
 .margin-right-sm{
     margin-right: 1.6rem;
+}
+.center-text{
+    text-align: center;
+}
+strong{
+    font-weight: 600;
 }
