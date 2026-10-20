@@ -14,6 +14,7 @@
     
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
 }
 
 .logo{
@@ -26,7 +27,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 3.2rem;
+    gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -57,6 +58,23 @@
 .main-nav-link.nav-cta:visited{
     background-color: #cf711f;
 }
+/* mobile */
+.btn-mobile-nav{
+border: none;
+background: none;
+cursor: pointer;
+
+display: none;
+}
+.icon-mobile-nav{
+height: 4.8rem;
+width: 4.8rem;
+color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
+}
 
 /* Hero */
 
@@ -66,7 +84,7 @@
 
 }
 
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     .section-hero{
     border: 20px dashed blue;
     background-color: yellow;
@@ -76,7 +94,7 @@
     .section-hero{
     background-color: yellowgreen;
 }
-}
+} */
 .hero{
    max-width: 130rem;
     display: grid;
@@ -327,8 +345,7 @@ margin-bottom: 1.2rem;
 }
 .testimonial-container{
     padding: 9.6rem;
-    /* display: grid;
-    grid-template-column: 1fr 1fr; */
+   
 }
 .testimonials{
     display: grid;
@@ -437,7 +454,7 @@ color: #6f6f6f;
     padding: 4.6rem;
 }
 .list-item{
-    line-height:3.5rem;
+    line-height:1.2rem;
     gap: 1.5rem;
 }
 .pricing-plan--complete{
@@ -509,6 +526,7 @@ padding: 4.6rem 0 12.8rem 0;
 
 .cta{
 display: grid;
+/* 2/3=66.66% + 1/3 = 33.3% */
 grid-template-columns: 2fr 1fr;
 /* background-color: #e67e22; */
  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
